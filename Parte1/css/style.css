@@ -1,0 +1,36 @@
+img {
+    width: 40%;
+    border: double;
+    border-width: 5px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+}
+
+#quote {
+    text-align: center;
+    font-size:15px;
+}
+
+span{
+    font-weight: bold;
+}
+
+body {
+    background-color: lightblue;
+  }
+
+footer{
+    margin-top:50px
+}
+
+#timeline{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+}
