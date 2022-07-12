@@ -37,11 +37,15 @@ function convertir(e){
 
 let boton = document.getElementById("btn_añoshumano").addEventListener("click",calculateDogAge)
 let edad = document.getElementById("edad_humano").value
-console.log(typeof "edad")
+console.log(parseInt(edad, 10))
+
+
 function calculateDogAge(e, edad){
   e.preventDefault()
-  let perro = edad*7
-  document.getElementById("edad_perro").value = parseInt(perro)
+  const parsed = parseInt(edad, 10)
+  console.log(typeof parsed)
+  const perro = parsed * 7
+  document.getElementById("edad_perro").value = perro
 
 }
   
@@ -62,3 +66,13 @@ function calculateDogAge(e, edad){
        Registra un evento de "click", para que cuando se de click en el botón, se muestren las propiedades de cada objeto en el input correspondiente. 
 
      */
+
+function Pokemon(nombre, especie, ataque, defensa){
+  this.nombre=nombre; 
+  this.especie=especie;
+  this.ataque=ataque;
+  this.defensa=defensa;
+
+}
+var pk1 = new Pokemon('pikachu', 'bicho', '500', '200');
+var pk2 = new Pokemon('plant', 'hada', '100', '200');
